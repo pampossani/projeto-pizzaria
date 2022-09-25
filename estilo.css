@@ -167,8 +167,7 @@ body{
 .conteudo-principal-imagem{
     /*box-shadow: 4px 4px 5px #635047;*/
     display: block;
-    overflow: hidden;
-    
+    overflow: hidden;    
     width: 300px;
     margin: 0 auto;
     border-radius: 5px;
