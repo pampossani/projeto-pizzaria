@@ -1,35 +1,183 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Cardápio - PizzaPan - Turma 08</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="estilo.css">
-    </head>
+<html lang="pt-BR">
+<head> <!-- informações de metadados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página que irá exibir os itens do cardápio uma pizzaria online fictícia">
+    <title>:: PizzaPan - Pizzaria Online T8::</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img\icone.png">
+</head>
+<body> <!-- corpo da página -->
+    <header class="cabecalho">
+        <img class="logo-cabecalho" src ="img\icone.png" alt="Logo da Página da Pizzaria Pizza Pan">
+        <nav class="menu-cabecalho">
+            <a class="item-menu-cabecalho" href="#sobre"> Sobre Nós</a>
+            <a class="item-menu-cabecalho" href="#cardapio-salgadas">Pizzas Salgadas</a>
+            <a class="item-menu-cabecalho" href="#cardapio-doces"> Pizzas Doces</a>
+            <a class="item-menu-cabecalho" href="#bebidas"> Bebidas</a>
+        </nav>
+    
+    </header>
 
-    <body>
-       
-        <center><h1>PizzaPan - Dando sabor às suas memórias</h1>
-            <h2>
-                Cardápio
-            </h2>
-        Ingredientes fresquinhos e sempre à moda da casa!<br>
+    <main class="conteudo-pagina">
+        <section class="conteudo-inicial">
+            <div class="conteudo-inicial-escrito"> 
+                <h1 class="conteudo-inicial-titulo">Pizza Pan</h1>
+                <h2 class="conteudo-inicial-subtitulo">Dando sabor às suas memórias!</h2>
+                <a href="#cardapio-salgadas"><button class="conteudo-inicial-escrito-botao" > Conheça nosso cardápio!</button></a>
+            </div>
+            <img class="conteudo-inicial-imagem" src="img\pizzaiola.png" alt="Imagem da Pizzaiola da PizzaPan">
+        </section>
+        <a name="sobre"></a>
+        <section class="conteudo-apresentacao">
+            <h3 class="conteudo-apresentacao-titulo"> Conheça um pouco da nossa pizzaria</h3>
+            <p class="conteudo-apresentacao-paragrafo">A <strong>Pizza Pan</strong> tem receitas 
+                com massas de fermentação natural e são entregues fresquinhas pra você. </p>
+            <p class="conteudo-apresentacao-paragrafo">A receita de família tem um ingrediente 
+                secreto que funciona perfeitamente até os dias de hoje, 
+                desde 1992: o <strong>amor</strong></strong>!</p>
 
-        <img src="img\pizza-margherita.jpg">
-        <p>
-            Ingredientes: Muçarela, manjericão, azeite, molho de tomate.
-        </p>
-        <br>
-        <img src="img\pizza-napoletana.png">
-        <p>
-            Ingredientes: Alho, azeite, tomate e orégano.
-        </p>
-        <br>
-        <img src="img\pizza-portuguesa.png">
-        <p>
-            Ingredientes: Cebola, ovo, azeitona, calabresa, azeite,molho de tomate, tomate e orégano.
-        </p>
-        <br>
-        </center>
-    </body>
+            <p class="conteudo-apresentacao-paragrafo">Quando a dona Panetona veio na imigração italiana
+                com a receitade sua mãe escondida no bolso para massas.</p>
+                <p class="conteudo-apresentacao-paragrafo"> Como ela podia imaginar  que seu
+                sonho de criar a Pizzaria que sua <i>nonna</i> tanto falava estaria tão possível aqui no Brasil?
+            </p>
+        </section>
 
+        <section class="conteudo-principal">
+            <a name="cardapio"></a>
+            <h2 class="conteudo-principal-titulo">Saboreie nosso Menu</h2>
+
+           <p class="conteudo-principal-paragrafo"> Ingredientes fresquinhos e sempre à 
+            moda da casa!</p>
+            <a name="cardapio-salgadas"></a>
+            <h2 class="conteudo-principal-titulo">Pizzas Salgadas</h2>
+
+            <div id="cardapio" >
+                <div id="item">
+                   
+                    <h2 class="cabecalho-itens-cardapio"> Pizza Marguerita</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-margherita.jpg">
+                    <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Muçarela, manjericão, azeite, 
+                        molho de tomate.</p>
+                        <h3 class="item-preco">A partir de R$25</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+               <div id="item">
+                    <h2 class="cabecalho-itens-cardapio"> Pizza Napoletana</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-napoletana.png">
+                    <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Alho, azeite, tomate e orégano.</p>
+                    <h3 class="item-preco">A partir de R$26</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+                 
+                <div id="item">   
+                    <h2 class="cabecalho-itens-cardapio"> Pizza Portuguesa</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-portuguesa.png">
+                    <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Cebola, ovo, azeitona,
+                        calabresa, azeite,molho de tomate, tomate e orégano.</p>
+                        <h3 class="item-preco">A partir de R$29</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+            </div>
+            <a name="cardapio-doces"></a>
+            <h2 class="conteudo-principal-titulo">Pizzas Doces</h2>
+            
+            <div id="cardapio">
+                <div id="item">
+                    <h2 class="cabecalho-itens-cardapio"> Pizza Bananoffe</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-banana.png">
+                    <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Muçarela, manjericão, azeite, 
+                        molho de tomate.</p>
+                        <h3 class="item-preco">A partir de R$28</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+               <div id="item">
+                    <h2 class="cabecalho-itens-cardapio"> Pizza de Morangote</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-morango.png">
+                    <p class="conteudo-principal-paragrafo">Ingredientes: Alho, azeite, tomate e orégano.</p>
+                    <h3 class="item-preco">A partir de R$35</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+                 
+                <div id="item">   
+                    <h2 class="cabecalho-itens-cardapio"> Pizza Dois Amores</h2>
+                    <img class="conteudo-principal-imagem" src="img\pizza-doisamores.jpg">
+                    <p class="conteudo-principal-paragrafo">Ingredientes: Cebola, ovo, azeitona,
+                        calabresa, azeite,molho de tomate, tomate e orégano.</p>
+                        <h3 class="item-preco">A partir de R$38</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+                
+            </div>
+
+
+            <a name="bebidas"></a>  
+            <h2 class="conteudo-principal-titulo">Bebidas</h2>
+           
+            <div id="cardapio">
+                <div id="item">
+                    <h2 class="cabecalho-itens-cardapio"> Refrigerantes</h2>
+                    <img class="conteudo-principal-imagem" src="img\refrigerantes.png">
+                    <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Muçarela, manjericão, azeite, 
+                        molho de tomate.</p>
+                        <h3 class="item-preco">Grande: R$25</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+               <div id="item">
+                    <h2 class="cabecalho-itens-cardapio"> Cervejas</h2>
+                    <img class="conteudo-principal-imagem" src="img\cervejas.png">
+                    <p class="conteudo-principal-paragrafo">Ingredientes: Alho, azeite, tomate e orégano.</p>
+                    <h3 class="item-preco">Grande: R$26</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+                 
+                <div id="item">   
+                    <h2 class="cabecalho-itens-cardapio"> Sucos</h2>
+                    <img class="conteudo-principal-imagem" src="img\sucos.jpg">
+                    <p class="conteudo-principal-paragrafo">Ingredientes: Cebola, ovo, azeitona,
+                        calabresa, azeite,molho de tomate, tomate e orégano.</p>
+                        <h3 class="item-preco">Grande: R$29</h3>
+                        <button class="items-btn">Comprar</button>
+                </div>
+
+                
+            </div>
+         </section>
+          
+
+<!---   <img class="conteudo-principal-imagem" src="img\pizza-margherita.jpg">
+        <p class="conteudo-principal-paragrafo">Ingredientes: Muçarela, manjericão, azeite, 
+            molho de tomate.</p>
+        <br>
+        <img class="conteudo-principal-imagem" src="img\pizza-napoletana.png">
+        <p class="conteudo-principal-paragrafo">Ingredientes: Alho, azeite, tomate e orégano.</p>
+        <br>
+        <img class="conteudo-principal-imagem" src="img\pizza-portuguesa.png">
+        <p class="conteudo-principal-paragrafo">Ingredientes: Cebola, ovo, azeitona,
+            calabresa, azeite,molho de tomate, tomate e orégano.</p>
+        <br>
+        -->     
+
+            </section>
+
+
+    </main>
+
+<footer class="rodape">
+   <img class="rodape-imagem" src="img\logo-pizzaria.png" alt="Logo da Pizzaria">
+    <a class="rodape-creditos" href="https://www.freepik.com/free-vector/clipart-cute-chef-selling-pizza-shop-vector-character-people-design_26937089.htm#query=pizza%20svg&position=35&from_view=search">Image by felicities</a> on Freepik
+</footer>
+<script src="script.js"></script>
+<noscript>Necessário habilitar o JavaScript para usufruir de todas as funções da página!</noscript>
+   
+
+
+</body>
 </html>
