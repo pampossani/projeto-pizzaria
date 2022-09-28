@@ -11,6 +11,23 @@ body{
     font-size: 100%;   
 }
 
+/* Jogar para o carrinho */
+
+.swal-overlay {
+    background-color: rgba(209, 140, 107, 0.45);
+  }
+ 
+  .swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #c08267;
+    font-size: 12px;
+    border: 1px solid #F05925;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  
+
 .cabecalho{
     display: flex;
     flex-direction: row;

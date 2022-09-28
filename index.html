@@ -7,6 +7,7 @@
     <title>:: PizzaPan - Pizzaria Online T8::</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img\icone.png">
+
 </head>
 <body> <!-- corpo da página -->
     <header class="cabecalho">
@@ -62,7 +63,7 @@
                     <p class="conteudo-principal-paragrafo"><strong>Ingredientes:</strong> Muçarela, manjericão, azeite, 
                         molho de tomate.</p>
                         <h3 class="item-preco">A partir de R$25</h3>
-                        <button class="items-btn">Comprar</button>
+                        <button class="items-btn" onclick="swal('Adicionado ao carrinho!');">Comprar</button>
                 </div>
 
                <div id="item">
@@ -161,8 +162,7 @@
 </footer>
 <script src="script.js"></script>
 <noscript>Necessário habilitar o JavaScript para usufruir de todas as funções da página!</noscript>
-   
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>
